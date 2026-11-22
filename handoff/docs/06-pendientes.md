@@ -1,0 +1,12 @@
+# 06 · Pendientes por definir con el museo (dejar editables, no inventar)
+- Archivos y textos reales del Inicio (fotos, frase breve, textos de espacios).
+- Quién carga las Colecciones y en qué cantidad; lista final de "forma de adquisición"; campos extra de la pieza (inventario, época, autor, material, crédito del donante).
+- Horarios, tarifas, correo de contacto, accesibilidad, estacionamiento, normas de visita.
+- Cantidad de calendarios anteriores y años disponibles; PDF de cada calendario.
+- Tipos de evento (filtro) y próximos eventos al lanzamiento.
+- PDF de nacionalidad (consultar con el museo dónde vive).
+- Campos del formulario de Colaboraciones (comunes y por tipo: Donación, Adquisición, Comodato) y del de visita guiada; correo de destino; límite y formato de fotos.
+- Textos de Modalidades y pasos de "Cómo funciona" completos; consejos directivos completos.
+- Logo en vector y tipografía original del logo (hoy se propone EB Garamond + Jost).
+- Licencia ACF PRO, hosting y dominio (a cargo del cliente), lista de redirecciones 301 (la genera Claude Code rastreando el sitio actual).
+- Propuesta comercial original: 4 semanas, inglés como fase 5 opcional, SEO avanzado y soporte fuera de alcance, 30 días de garantía.
