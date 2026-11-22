@@ -1,0 +1,25 @@
+MUSEO SEFARDÍ DE CARACAS · Diseño con paleta (maqueta navegable)
+
+Cómo verlo: descomprime la carpeta y abre index.html en el navegador.
+El menú y los enlaces llevan a la página correspondiente. Las páginas son
+responsivas (escritorio y móvil); Inicio tiene versión móvil propia
+(index-movil.html) a la que redirige en pantallas pequeñas.
+
+Páginas
+  index.html                     Inicio
+  el-museo.html                  El museo
+  colecciones.html               Colecciones · portada
+  colecciones-categoria.html     Colecciones · categoría (Libros)
+  colecciones-ficha.html         Colecciones · ficha de pieza
+  exposiciones.html              Exposiciones · portada
+  exposiciones-pasadas.html      Exposiciones · archivo de pasadas
+  exposiciones-ficha.html        Exposiciones · ficha
+  eventos.html / eventos-ficha.html
+  publicaciones.html / publicaciones-ficha.html / publicaciones-calendarios.html
+  colaboraciones.html
+  visitanos.html
+
+Logo: coloca el archivo del logo en assets/logo.png (si no está, se muestra
+el nombre del museo en texto).
+Tipografías: EB Garamond y Jost desde Google Fonts (requiere conexión).
+Contenido: textos e imágenes son marcadores de posición.
