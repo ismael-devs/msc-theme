@@ -1,0 +1,5 @@
+Paquete de traspaso a Claude Code · Museo Sefardí de Caracas
+1) Copia esta carpeta (handoff/) dentro del repositorio del proyecto.
+2) Abre Claude Code en la raíz y pega el contenido de PROMPT.md.
+3) La referencia visual está en reference/html-paleta/index.html.
+4) Coloca el logo en theme-assets/img/logo.png cuando lo tengas.
