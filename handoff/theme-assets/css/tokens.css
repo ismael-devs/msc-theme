@@ -1,0 +1,12 @@
+:root{
+  --msc-navy:#24335c;--msc-navy-900:#141c33;--msc-navy-100:#e6e9f2;
+  --msc-gold:#cc942b;--msc-gold-text:#8a5f0f;--msc-gold-100:#f6efe0;
+  --msc-paper:#f6f7fa;--msc-ink:#1b2236;--msc-ink-muted:#4a5368;--msc-line:#c9cedc;
+  --msc-placeholder:#dfe4f0;--msc-placeholder-line:#8f99b8;
+  --msc-red:#da2027;--msc-green:#1d9c48;--msc-petrol:#1b5f7a;--msc-cyan:#20b9d4;--msc-magenta:#c01f62;--msc-teal:#1a8ca0;
+  --msc-green-text:#15703a;--msc-teal-text:#12687a;--msc-red-text:#c4161c;--msc-focus:#20b9d4;
+  --msc-col-libros:#da2027;--msc-col-documentos:#1b5f7a;--msc-col-fotografias:#1a8ca0;--msc-col-judaica:#cc942b;--msc-col-arte:#c01f62;
+  --msc-font-title:"EB Garamond",Garamond,Georgia,serif;--msc-font-text:"Jost","Avenir Next",system-ui,sans-serif;
+  --msc-gutter:64px;--msc-bp:820px;
+}
+@media (max-width:820px){:root{--msc-gutter:16px}}
