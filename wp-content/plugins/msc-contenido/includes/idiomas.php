@@ -189,6 +189,10 @@ function msc_enlaces_idioma() {
 					$traducido = empty( $lista[ $codigo ]['no_translation'] );
 				}
 			}
+			// Vistas sin traducción propia (archivos de eventos, publicaciones, pasadas...): misma ruta en el otro idioma.
+			if ( is_post_type_archive() || is_search() ) {
+				$url = msc_ruta_en_idioma( $codigo );
+			}
 			if ( ! $url ) {
 				$url = msc_url_base( $codigo );
 			}
@@ -200,4 +204,23 @@ function msc_enlaces_idioma() {
 		);
 	}
 	return $salida;
+}
+
+/**
+ * Ruta actual (sin prefijo de idioma) trasladada a otro idioma, con su consulta.
+ *
+ * @param string $codigo Idioma de destino.
+ * @return string
+ */
+function msc_ruta_en_idioma( $codigo ) {
+	$uri  = isset( $_SERVER['REQUEST_URI'] ) ? esc_url_raw( wp_unslash( $_SERVER['REQUEST_URI'] ) ) : '/';
+	$ruta = trim( (string) wp_parse_url( $uri, PHP_URL_PATH ), '/' );
+	$base = trim( (string) wp_parse_url( home_url( '/' ), PHP_URL_PATH ), '/' );
+	if ( '' !== $base && 0 === strpos( $ruta, $base ) ) {
+		$ruta = trim( substr( $ruta, strlen( $base ) ), '/' );
+	}
+	$ruta = preg_replace( '#^(' . implode( '|', array_map( 'preg_quote', msc_idiomas_secundarios() ) ) . ')(/|$)#', '', $ruta );
+	$url  = msc_url( $ruta, $codigo );
+	$qs   = (string) wp_parse_url( $uri, PHP_URL_QUERY );
+	return $qs ? $url . '?' . $qs : $url;
 }

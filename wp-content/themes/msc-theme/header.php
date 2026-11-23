@@ -70,9 +70,9 @@ $msc_inicio  = function_exists( 'msc_url_base' ) ? msc_url_base() : home_url( '/
 					$msc_nombre = 'es' === $msc_codigo ? 'Español' : 'English';
 					if ( $msc_i['actual'] ) :
 						?>
-						<a class="is-actual" href="<?php echo esc_url( (string) $msc_i['url'] ); ?>" lang="<?php echo esc_attr( $msc_codigo ); ?>" aria-current="true" aria-label="<?php echo esc_attr( $msc_nombre ); ?>"><?php echo esc_html( strtoupper( $msc_codigo ) ); ?></a>
+						<a class="is-actual" href="<?php echo esc_url( (string) $msc_i['url'] ); ?>" lang="<?php echo esc_attr( $msc_codigo ); ?>" aria-current="true"><?php echo esc_html( strtoupper( $msc_codigo ) ); ?><span class="screen-reader-text"> — <?php echo esc_html( $msc_nombre ); ?></span></a>
 					<?php elseif ( $msc_i['url'] ) : ?>
-						<a href="<?php echo esc_url( $msc_i['url'] ); ?>" lang="<?php echo esc_attr( $msc_codigo ); ?>" hreflang="<?php echo esc_attr( $msc_codigo ); ?>" aria-label="<?php echo esc_attr( $msc_nombre ); ?>"><?php echo esc_html( strtoupper( $msc_codigo ) ); ?></a>
+						<a href="<?php echo esc_url( $msc_i['url'] ); ?>" lang="<?php echo esc_attr( $msc_codigo ); ?>" hreflang="<?php echo esc_attr( $msc_codigo ); ?>"><?php echo esc_html( strtoupper( $msc_codigo ) ); ?><span class="screen-reader-text"> — <?php echo esc_html( $msc_nombre ); ?></span></a>
 					<?php else : ?>
 						<span class="is-pronto" lang="<?php echo esc_attr( $msc_codigo ); ?>" title="<?php echo esc_attr( 'en' === $msc_codigo ? 'Coming soon' : 'Próximamente' ); ?>"><?php echo esc_html( strtoupper( $msc_codigo ) ); ?><span class="screen-reader-text"> — <?php echo esc_html( 'en' === $msc_codigo ? 'English version coming soon' : 'Próximamente' ); ?></span></span>
 					<?php endif; ?>

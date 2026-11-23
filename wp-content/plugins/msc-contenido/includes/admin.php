@@ -280,3 +280,23 @@ function msc_widget_escritorio() {
 	);
 }
 add_action( 'wp_dashboard_setup', 'msc_widget_escritorio' );
+
+/**
+ * El sitio no tiene Noticias ni comentarios: oculta "Entradas" y "Comentarios" del menú
+ * para que el equipo no publique en secciones que no se muestran.
+ * Desactivable con add_filter( 'msc_ocultar_entradas', '__return_false' ).
+ */
+function msc_simplificar_menu() {
+	if ( ! apply_filters( 'msc_ocultar_entradas', true ) ) {
+		return;
+	}
+	remove_menu_page( 'edit.php' );
+	remove_menu_page( 'edit-comments.php' );
+}
+add_action( 'admin_menu', 'msc_simplificar_menu', 99 );
+
+/**
+ * Comentarios y pings cerrados en todo el sitio.
+ */
+add_filter( 'comments_open', '__return_false', 20 );
+add_filter( 'pings_open', '__return_false', 20 );

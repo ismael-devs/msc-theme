@@ -99,6 +99,12 @@ function msc_imprimir_metadatos() {
 		return;
 	}
 	$descripcion = trim( wp_strip_all_tags( msc_descripcion_vista() ) );
+	if ( '' === $descripcion && is_singular() ) {
+		$descripcion = (string) get_post_meta( get_queried_object_id(), 'subtitulo', true );
+	}
+	if ( '' === $descripcion ) {
+		$descripcion = get_bloginfo( 'description' );
+	}
 	if ( $descripcion ) {
 		printf( '<meta name="description" content="%s">' . "\n", esc_attr( $descripcion ) );
 	}

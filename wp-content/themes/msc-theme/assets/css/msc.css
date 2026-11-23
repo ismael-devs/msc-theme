@@ -292,7 +292,8 @@ input[type=file]{min-height:48px;padding:10px;border:1px dashed var(--msc-placeh
 /* ---------- Marquee de instituciones aliadas ---------- */
 .msc-marquee{overflow:hidden;border-top:1px solid var(--msc-line);border-bottom:1px solid var(--msc-line);padding:20px 0;cursor:pointer}
 .msc-marquee__pista{display:flex;width:max-content;gap:24px;animation:msc-marquee 40s linear infinite}
-.msc-marquee:hover .msc-marquee__pista,.msc-marquee:focus-within .msc-marquee__pista,.msc-marquee.is-detenido .msc-marquee__pista{animation-play-state:paused}
+.msc-marquee:focus-within .msc-marquee__pista,.msc-marquee.is-detenido .msc-marquee__pista{animation-play-state:paused}
+@media (hover:hover){.msc-marquee:hover .msc-marquee__pista{animation-play-state:paused}}
 .msc-marquee__grupo{list-style:none;margin:0;padding:0;display:flex;gap:24px}
 .msc-marquee__item{flex:none;width:200px;height:84px;display:flex;align-items:center;justify-content:center;background:#fff;border:1px solid var(--msc-line);padding:8px 12px;text-align:center}
 .msc-marquee__item a{display:flex;align-items:center;justify-content:center;width:100%;height:100%;text-decoration:none}
