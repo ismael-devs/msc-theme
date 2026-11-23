@@ -85,11 +85,13 @@ class MSC_CLI {
 		}
 		$adjuntos = get_posts(
 			array(
-				'post_type'      => 'attachment',
-				'post_status'    => 'any',
-				'posts_per_page' => -1,
-				'fields'         => 'ids',
-				'meta_key'       => '_msc_ejemplo', // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_key
+				'post_type'        => 'attachment',
+				'post_status'      => 'any',
+				'posts_per_page'   => -1,
+				'fields'           => 'ids',
+				'meta_key'         => '_msc_ejemplo', // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_key
+				'lang'             => '',
+				'suppress_filters' => true,
 			)
 		);
 		foreach ( $adjuntos as $id ) {
@@ -126,7 +128,7 @@ class MSC_CLI {
 		for ( $i = 0; $i < 4; $i++ ) {
 			imagerectangle( $im, $i, $i, $ancho - 1 - $i, $alto - 1 - $i, $borde );
 		}
-		$texto  = '[' . $etiqueta . ']';
+		$texto  = '[' . remove_accents( $etiqueta ) . ']';
 		$fuente = 5;
 		$escala = max( 1, (int) floor( $ancho / 400 ) );
 		$tw     = imagefontwidth( $fuente ) * strlen( $texto );
@@ -813,8 +815,8 @@ class MSC_CLI {
 			array( '-500 days 18:00', false ),
 		);
 		foreach ( $lista as $i => $e ) {
-			$fecha = $hoy->modify( $e[0] );
-			$this->entrada(
+			$fecha  = $hoy->modify( $e[0] );
+			$evento = $this->entrada(
 				'msc_evento',
 				$e[1] ? sprintf( '[Evento de ejemplo %d con ficha]', $i + 1 ) : sprintf( '[Evento de ejemplo %d sin ficha]', $i + 1 ),
 				array(
@@ -829,6 +831,7 @@ class MSC_CLI {
 				),
 				array( 'post_name' => 'evento-ejemplo-' . ( $i + 1 ) )
 			);
+			wp_set_object_terms( $evento, array( (int) $tipos[ $i % count( $tipos ) ] ), 'tipo_evento' );
 		}
 	}
 }
