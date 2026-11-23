@@ -300,3 +300,57 @@ add_action( 'admin_menu', 'msc_simplificar_menu', 99 );
  */
 add_filter( 'comments_open', '__return_false', 20 );
 add_filter( 'pings_open', '__return_false', 20 );
+
+/**
+ * Página Herramientas → Datos de ejemplo MSC (alternativa a "wp msc seed" sin WP-CLI).
+ */
+function msc_menu_datos_ejemplo() {
+	add_management_page(
+		__( 'Datos de ejemplo MSC', 'msc' ),
+		__( 'Datos de ejemplo MSC', 'msc' ),
+		'manage_options',
+		'msc-datos-ejemplo',
+		'msc_pantalla_datos_ejemplo'
+	);
+}
+add_action( 'admin_menu', 'msc_menu_datos_ejemplo' );
+
+/**
+ * Pantalla de datos de ejemplo.
+ */
+function msc_pantalla_datos_ejemplo() {
+	if ( ! current_user_can( 'manage_options' ) ) {
+		return;
+	}
+	$mensajes = array();
+	if ( isset( $_POST['msc_ejemplo_accion'], $_POST['msc_ejemplo_nonce'] ) && wp_verify_nonce( sanitize_text_field( wp_unslash( $_POST['msc_ejemplo_nonce'] ) ), 'msc_datos_ejemplo' ) ) {
+		$accion = sanitize_key( wp_unslash( $_POST['msc_ejemplo_accion'] ) );
+		$datos  = new MSC_Datos_Ejemplo();
+		if ( 'crear' === $accion ) {
+			$datos->seed( array(), array( 'reset' => ! empty( $_POST['msc_ejemplo_reset'] ) ) );
+		} elseif ( 'borrar' === $accion ) {
+			$datos->limpiar( array(), array() );
+			msc_limpiar_cache();
+		}
+		$mensajes = $datos->mensajes;
+	}
+	?>
+	<div class="wrap">
+		<h1><?php esc_html_e( 'Datos de ejemplo del Museo Sefardí', 'msc' ); ?></h1>
+		<?php foreach ( $mensajes as $m ) : ?>
+			<div class="notice notice-info"><p><?php echo esc_html( $m ); ?></p></div>
+		<?php endforeach; ?>
+		<p><?php esc_html_e( 'Crea las páginas con sus plantillas (Inicio, El museo, Colecciones, Exposiciones, Colaboraciones, Visítanos, Política de privacidad), el menú principal, los ajustes del museo y contenido de prueba para ver todas las plantillas: piezas, exposiciones, eventos, publicaciones y calendarios.', 'msc' ); ?></p>
+		<div class="notice notice-warning inline"><p><?php esc_html_e( 'Atención: sobrescribe los campos de las páginas editoriales, del Inicio y de los ajustes del museo con los textos de partida. Úsalo solo en un sitio de pruebas o antes de cargar el contenido real. También ajusta los enlaces permanentes a /%postname%/ y la zona horaria a Caracas.', 'msc' ); ?></p></div>
+		<form method="post" style="margin-top:16px">
+			<?php wp_nonce_field( 'msc_datos_ejemplo', 'msc_ejemplo_nonce' ); ?>
+			<p><label><input type="checkbox" name="msc_ejemplo_reset" value="1"> <?php esc_html_e( 'Borrar antes el contenido de ejemplo anterior', 'msc' ); ?></label></p>
+			<p>
+				<button type="submit" name="msc_ejemplo_accion" value="crear" class="button button-primary"><?php esc_html_e( 'Crear datos de ejemplo', 'msc' ); ?></button>
+				<button type="submit" name="msc_ejemplo_accion" value="borrar" class="button" onclick="return confirm('<?php echo esc_js( __( '¿Borrar todo el contenido de ejemplo? El contenido real no se toca.', 'msc' ) ); ?>');"><?php esc_html_e( 'Borrar datos de ejemplo', 'msc' ); ?></button>
+			</p>
+			<p class="description"><?php esc_html_e( 'Puede tardar hasta un minuto (genera imágenes de muestra). No cierres la página.', 'msc' ); ?></p>
+		</form>
+	</div>
+	<?php
+}

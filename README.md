@@ -50,6 +50,10 @@ No se usa ningún otro plugin.
 10. **Museo** (menú lateral): completa los datos globales (dirección, teléfonos, horarios, instituciones aliadas, correo de los formularios…).
 11. Logo: súbelo en **Apariencia → Personalizar → Identidad del sitio**, o colócalo en `wp-content/themes/msc-theme/assets/img/logo.png`. Sin logo se muestra el nombre del museo en EB Garamond.
 
+### Instalación rápida con datos de ejemplo (sin WP-CLI)
+
+En **Herramientas → Datos de ejemplo MSC**, el botón **Crear datos de ejemplo** hace lo mismo que `wp msc seed` (reemplaza los pasos 5 y 8–10). El botón **Borrar datos de ejemplo** equivale a `wp msc limpiar`.
+
 ### Instalación rápida con datos de ejemplo (WP-CLI)
 
 Con WP-CLI hay un atajo que reemplaza los pasos 5 y 8–10. Crea las páginas con sus plantillas y los textos reales de `docs/04`, el menú, las opciones y contenido de prueba de todas las plantillas:

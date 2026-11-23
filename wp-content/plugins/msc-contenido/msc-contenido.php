@@ -41,6 +41,9 @@ foreach ( $msc_archivos as $msc_archivo ) {
 }
 unset( $msc_archivos, $msc_archivo );
 
+if ( is_admin() || ( defined( 'WP_CLI' ) && WP_CLI ) ) {
+	require_once MSC_CONTENIDO_DIR . 'includes/datos-ejemplo.php';
+}
 if ( defined( 'WP_CLI' ) && WP_CLI ) {
 	require_once MSC_CONTENIDO_DIR . 'includes/cli.php';
 }
