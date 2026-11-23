@@ -175,6 +175,7 @@ class MSC_Datos_Ejemplo {
 			array(
 				'post_mime_type' => 'image/jpeg',
 				'post_title'     => $etiqueta,
+				'post_name'      => 'msc-ejemplo-' . sanitize_title( $etiqueta ) . '-' . $ancho . 'x' . $alto,
 				'post_status'    => 'inherit',
 			),
 			$subida['file']
@@ -220,6 +221,7 @@ class MSC_Datos_Ejemplo {
 			array(
 				'post_mime_type' => 'application/pdf',
 				'post_title'     => $titulo,
+				'post_name'      => 'msc-ejemplo-pdf-' . sanitize_title( $titulo ),
 				'post_status'    => 'inherit',
 			),
 			$subida['file']
@@ -240,6 +242,10 @@ class MSC_Datos_Ejemplo {
 	private function entrada( $tipo, $titulo, $campos = array(), $extra = array() ) {
 		$slug      = $extra['post_name'] ?? sanitize_title( $titulo );
 		$existente = get_page_by_path( $slug, OBJECT, $tipo );
+		// get_page_by_path() también encuentra adjuntos con el mismo slug: solo vale el mismo tipo.
+		if ( $existente && $existente->post_type !== $tipo ) {
+			$existente = null;
+		}
 		$datos     = array_merge(
 			array(
 				'post_type'   => $tipo,
