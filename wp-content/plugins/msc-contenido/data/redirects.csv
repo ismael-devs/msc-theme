@@ -1,0 +1,93 @@
+origen,destino,respaldo,estado,nota
+/Brochure AIV Nacionalidad Portuguesa.pdf,,,pendiente,PDF de nacionalidad: el museo debe decir dónde vive (docs/06)
+/acercamiento.html,/eventos/acercamiento/,/eventos/,revisar,Evento: Conferencia dictada de Federica Palomero   Miercoles 10 de enero 2018. Se usa el respaldo si no se migra
+/aica-premia-a-museo-sefardi.html,/el-museo/,,revisar,Noticia de premio AICA: sin sección de noticias
+/alli-me-encuentro-pero-no-me-pueden-ver-lihie-talmor.html,/exposiciones/pasadas/alli-me-encuentro-pero-no-me-pueden-ver/,/exposiciones/pasadas/,revisar,Exposición: Allí me encuentro pero no me pueden ver. Lihie Talmor. Se usa el respaldo mientras no exista con ese slug
+/altar-de-una-diaspora.html,/exposiciones/pasadas/altar-de-una-diaspora/,/exposiciones/pasadas/,revisar,Exposición: Altar de una Diáspora. La mesa judía en Venezuela. Se usa el respaldo mientras no exista con ese slug
+/anselm-kiefer.html,/eventos/anselm-kiefer/,/eventos/,revisar,"Evento: Luego de un recuento sobre la obra de Anselm Kiefer (1945), artista al. Se usa el respaldo si no se migra"
+/apellidos_sefardies.html,/eventos/apellidos-sefardies/,/eventos/,revisar,Evento: Por Itzahak Benabraham    Lunes 22 de febrero. Se usa el respaldo si no se migra
+/araya.html,/eventos/araya/,/eventos/,revisar,Evento: El Domingo 28 de julio  Homenaje a Margot Benacerraf a 60 años por su. Se usa el respaldo si no se migra
+/arte_y_poder_1937.html,/eventos/arte-y-poder-1937/,/eventos/,revisar,Evento: En ocasión del Día Internacional de los Museos invita a la. Se usa el respaldo si no se migra
+/artistas-frente-a-la-persecucion-nazi-charla.html,/eventos/artistas-frente-a-la-persecucion-nazi-charla/,/eventos/,revisar,Evento: Lugar: Sala del Museo Sefardí   Fecha: 17 de junio de 2012   Hora: 11:. Se usa el respaldo si no se migra
+/arturo-obadia-beracasa.html,/exposiciones/pasadas/arturo-obadia-beracasa-un-rincon-cualquiera/,/exposiciones/pasadas/,revisar,Exposición: Arturo Obadía Beracasa. Un rincón cualquiera. Se usa el respaldo mientras no exista con ese slug
+/auschwitz-y-la-memoria.html,/eventos/auschwitz-y-la-memoria/,/eventos/,revisar,"Evento: Ambas ponentes participaron en febrero de 2012 en el seminario ""Memori. Se usa el respaldo si no se migra"
+/charla-la-escena-artistica-venezolana-en-los-anos-80.html,/eventos/charla-la-escena-artistica-venezolana-en-los-anos-80/,/eventos/,revisar,Evento: En el marco de la exposición Walter Margulis. Un espíritu abstracto. L. Se usa el respaldo si no se migra
+/charla-mark-rothko-una-inmersion-en-el-color.html,/eventos/charla-mark-rothko-una-inmersion-en-el-color/,/eventos/,revisar,Evento: En el marco de la exposición Walter Margulis. Un espíritu abstracto. L. Se usa el respaldo si no se migra
+/charla_encuentro-entre-poetas.html,/eventos/charla-encuentro-entre-poetas/,/eventos/,revisar,"Evento: El Museo Sefardí de Caracas Morris E. Curiel, invita al Encuentro entr. Se usa el respaldo si no se migra"
+/charla_rabino-isaac-cohen.html,/eventos/charla-rabino-isaac-cohen/,/eventos/,revisar,Evento: Simbología numérica en el alfabeto hebreo   Fecha: domingo 11 de novie. Se usa el respaldo si no se migra
+/colecciones_documentos.html,/colecciones/documentos/,,ok,
+/colecciones_judaica.html,/colecciones/judaica/,,ok,
+/colecciones_libros.html,/colecciones/libros/,,ok,
+/colecciones_obras.html,/colecciones/arte/,,ok,Obras de arte → Arte
+/collection_arts.html,/colecciones/arte/,,revisar,Inglés
+/collection_books.html,/colecciones/libros/,,revisar,Inglés
+/collection_documents.html,/colecciones/documentos/,,revisar,Inglés
+/collection_judaicaen.html,/colecciones/judaica/,,revisar,Inglés
+/collections_books.html,/colecciones/libros/,,revisar,Francés
+/collectionsf_documents.html,/colecciones/documentos/,,revisar,Francés
+/collectionsf_judaica.html,/colecciones/judaica/,,revisar,Francés
+/collectionsf_obras.html,/colecciones/arte/,,revisar,Francés
+/conferencia-dia-de-los-museos.html,/eventos/conferencia-dia-de-los-museos/,/eventos/,revisar,Evento: Conferencia en ocasión del Día Internacional de los Museos:   Domingo. Se usa el respaldo si no se migra
+/conferencia-harry-abend.html,/eventos/conferencia-harry-abend/,/eventos/,revisar,"Evento: El Museo Sefardí de Caracas invita a la conferencia ""Harry Abend. Escu. Se usa el respaldo si no se migra"
+/crespin.html,/eventos/crespin/,/eventos/,revisar,Evento: Charla Del Ateneo de Cabudare al Museo de Lou. Se usa el respaldo si no se migra
+/datos.html,/visitanos/,,ok,Datos prácticos
+/de-norafrica-venimos.html,/exposiciones/pasadas/de-norafrica-venimos/,/exposiciones/pasadas/,revisar,Exposición: De Norafrica venimos. Judíos de Marruecos en esta Tierra de Gracia. Se usa el respaldo mientras no exista con ese slug
+/donaciones.html,/colaboraciones/#donacion,/colaboraciones/,revisar,La página antigua lista piezas donadas: ¿mejor /colecciones/?
+/donaciones.html.html,/colaboraciones/,,revisar,Enlace roto del sitio antiguo
+/el-ciclo-de-la-vida-judia.html,/eventos/el-ciclo-de-la-vida-judia/,/eventos/,revisar,Evento: Por Rabino Isaac Cohén Anidjar   Domingo 27   11:00 AM   Sala de Expos. Se usa el respaldo si no se migra
+/el-comic-de-superheroes-nueva-york-y-los-autores-judios.html,/eventos/el-comic-de-superheroes-nueva-york-y-los-autores-judios/,/eventos/,revisar,Evento: El domingo 18 de marzo el arquitecto e investigador de las ciudades de. Se usa el respaldo si no se migra
+/el-viaje.html,/exposiciones/pasadas/el-viaje/,/exposiciones/pasadas/,revisar,Exposición: El Viaje. Se usa el respaldo mientras no exista con ese slug
+/entartete-kunst.html,/eventos/entartete-kunst/,/eventos/,revisar,Evento: Arte degenerado: el nazismo y la destrucción de la cultura. por Federi. Se usa el respaldo si no se migra
+/escrituras.html,/exposiciones/pasadas/escrituras/,/exposiciones/pasadas/,revisar,Exposición: Escrituras. Se usa el respaldo mientras no exista con ese slug
+/eventos.html,/eventos/,,ok,
+/events.html,/eventos/,,revisar,Inglés
+/eventsf.html,/eventos/,,revisar,Francés
+/exhibitions.html,/exposiciones/,,revisar,Inglés
+/expo_pardo.html,/exposiciones/pasadas/los-pardo/,/exposiciones/pasadas/,revisar,Exposición: EXPOSICIÓN LOS PARDO. FINAL DE UN PERIPLO SEFARDÍ EN VENEZUELA. Se usa el respaldo mientras no exista con ese slug
+/expo_reina_herrera.html,/exposiciones/pasadas/reina-herrera-legado-de-vida/,/exposiciones/pasadas/,revisar,Exposición: Reina Herrera Legado de Vida. Se usa el respaldo mientras no exista con ese slug
+/exposicion-judaica-contemporanea.html,/eventos/exposicion-judaica-contemporanea/,/eventos/,revisar,"Evento: En el marco de la celebración de los 15 años de su fundación, el Museo. Se usa el respaldo si no se migra"
+/exposicion-puesta-largo.html,/eventos/exposicion-puesta-largo/,/eventos/,revisar,"Evento: En el marco de la celebración de los 15 años de su fundación, el Museo. Se usa el respaldo si no se migra"
+/exposiciones.html,/exposiciones/,,ok,
+/expositions.html,/exposiciones/,,revisar,Francés
+/felix-nussbaun-artista-plastico.html,/eventos/felix-nussbaun-artista-plastico/,/eventos/,revisar,"Evento: El domingo 11 de marzo la historiadora de arte, Federica Palomero, dic. Se usa el respaldo si no se migra"
+/harryabend.html,/eventos/harryabend/,/eventos/,revisar,Evento: Con Federica Palomero    Miércoles 17 de Marzo. Se usa el respaldo si no se migra
+/histoire.html,/el-museo/#historia,,revisar,Francés: sin equivalente
+/historia.html,/el-museo/#historia,,ok,Historia y misión
+/history.html,/el-museo/#historia,,revisar,Cambiar a /en/el-museo/ con el inglés
+/homenaje.html,/eventos/homenaje/,/eventos/,revisar,Evento: El Domingo 17 de febrero se llevo a cabo El Homenaje a Leonard Bernste. Se usa el respaldo si no se migra
+/inauguracion-de-la-exposicion-de-walter-margulis.html,/eventos/inauguracion-de-la-exposicion-de-walter-margulis/,/eventos/,revisar,Evento: Estimados amigos:   Estamos muy complacidos en haber hecho posible una. Se usa el respaldo si no se migra
+/index.html,/,,ok,Inicio
+/indexen.html,/,,revisar,Inicio en inglés: cambiar a /en/ cuando se publique el inglés
+/indexfr.html,/,,revisar,Inicio en francés: el nuevo sitio no tendrá francés
+/information.html,/visitanos/,,revisar,Inglés
+/informations.html,/visitanos/,,revisar,Francés
+/isaacroom.html,/el-museo/#espacios,,revisar,Inglés
+/israel.html,/exposiciones/pasadas/israel-pasado-y-presente/,/exposiciones/pasadas/,revisar,"Exposición: Israel, Pasado y Presente. Se usa el respaldo mientras no exista con ese slug"
+/jerusalen.html,/eventos/jerusalen/,/eventos/,revisar,Evento: Día Internacional de los Museos (18 de mayo)    Consejo Internacional. Se usa el respaldo si no se migra
+/la-nota-judia-en-el-rock.html,/eventos/la-nota-judia-en-el-rock/,/eventos/,revisar,Evento: El domingo 3 de junio el director del departamento de cultura de la Un. Se usa el respaldo si no se migra
+/la-nuestra-novia.html,/exposiciones/pasadas/la-nuestra-novia/,/exposiciones/pasadas/,revisar,Exposición: La Nuestra Novia. Se usa el respaldo mientras no exista con ese slug
+/la-shoa.html,/exposiciones/pasadas/la-shoa-introduccion-historica/,/exposiciones/pasadas/,revisar,Exposición: La Shoá. Introducción histórica. Se usa el respaldo mientras no exista con ese slug
+/laspalabrasymusica.html,/eventos/laspalabrasymusica/,/eventos/,revisar,Evento: Con el patrocinio de Amigos de la Cultura Sefardí se complacen en invi. Se usa el respaldo si no se migra
+/libro.mp3,,,pendiente,Audio: confirmar si se conserva
+/los-sefardies.html,/exposiciones/pasadas/los-sefardies-vinculo-entre-curazao-y-venezuela/,/exposiciones/pasadas/,revisar,Exposición: Los Sefardíes. Vínculo entre Curazao y Venezuela. Se usa el respaldo mientras no exista con ese slug
+/mevorah-florentin.html,/exposiciones/pasadas/mevorah-florentin/,/exposiciones/pasadas/,revisar,Exposición: Mevorah Florentin. El visionario legado de un invidente. Se usa el respaldo mientras no exista con ese slug
+/mi_huida_de_los_nazis.html,/eventos/mi-huida-de-los-nazis/,/eventos/,revisar,Evento: La historia de Paquita Sitzer    Martes 19 de Enero. Se usa el respaldo si no se migra
+/monumento.html,/eventos/monumento/,/eventos/,revisar,Evento: En el Día Internacional de los Museos i. Se usa el respaldo si no se migra
+/moritz-daniel-oppenheim.html,/eventos/moritz-daniel-oppenheim/,/eventos/,revisar,Evento: La expresión pictórica del judaísmo enla Alemania del siglo XIX por Fe. Se usa el respaldo si no se migra
+/news.html,/eventos/,,revisar,No habrá sección de Noticias (inglés)
+/noticias.html,/eventos/,,revisar,No habrá sección de Noticias
+/nouvelles.html,/eventos/,,revisar,No habrá sección de Noticias (francés)
+/objetos-y-memorias-coleccion.html,/exposiciones/pasadas/objetos-y-memorias/,/exposiciones/pasadas/,revisar,Exposición: Objetos y memorias. Piezas selectas de la Colección. Se usa el respaldo mientras no exista con ese slug
+/presencia-judia-en-el-arte-venezolano.html,/exposiciones/pasadas/presencia-judia-en-el-arte-venezolano/,/exposiciones/pasadas/,revisar,Exposición: Presencia Judía en el arte Venezolano. Se usa el respaldo mientras no exista con ese slug
+/presentacion_libro.html,/eventos/presentacion-libro/,/eventos/,revisar,Evento: Habla Cantada de la lengua Judeoe. Se usa el respaldo si no se migra
+/publicaciones.html,/publicaciones/,,ok,
+/publications.html,/publicaciones/,,revisar,Inglés
+/publicationsf.html,/publicaciones/,,revisar,Francés
+/reinaherrera.html,/eventos/reinaherrera/,/eventos/,revisar,Evento: El Museo Sefardí de Caracas Morris E. Curiel. Invita a la inauguración. Se usa el respaldo si no se migra
+/salalectura.html,/el-museo/#espacios,,ok,Sala de lectura Isaac Chocrón
+/sallelecture.html,/el-museo/#espacios,,revisar,Francés
+/samaritanos.html,/eventos/samaritanos/,/eventos/,revisar,Evento: Nos camplace invitarle a la exposición. Se usa el respaldo si no se migra
+/viaje.html,/eventos/viaje/,/eventos/,revisar,Evento: El martes 3 de julio de 2018 se llevo a cabo la presentación del libro. Se usa el respaldo si no se migra
+/vienna-klezmer-band-en-concierto.html,/eventos/vienna-klezmer-band-en-concierto/,/eventos/,revisar,Evento: Bajo los auspicios de la Embajada de Austria en Venezuela   15 de octu. Se usa el respaldo si no se migra
+/visita-guiada-a-la-sinagoga-tiferet-israel-del-este.html,/eventos/visita-guiada-a-la-sinagoga-tiferet-israel-del-este/,/eventos/,revisar,Evento: El Museo Sefardí de Caracas Morris E. Curiel invita a la visita guiada. Se usa el respaldo si no se migra
+/walter-margulis.html,/exposiciones/pasadas/walter-margulis-un-espiritu-abstracto/,/exposiciones/pasadas/,revisar,Exposición: Walter Margulis. Un espíritu abstracto. Se usa el respaldo mientras no exista con ese slug

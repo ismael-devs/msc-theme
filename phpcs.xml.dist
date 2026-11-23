@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<ruleset name="MSC">
+	<description>Estándar de código del Museo Sefardí (WordPress + compatibilidad PHP 8.1+).</description>
+	<file>wp-content/plugins/msc-contenido</file>
+	<file>wp-content/themes/msc-theme</file>
+	<exclude-pattern>*/vendor/*</exclude-pattern>
+	<exclude-pattern>*/node_modules/*</exclude-pattern>
+	<arg name="extensions" value="php"/>
+	<arg value="sp"/>
+	<config name="testVersion" value="8.1-"/>
+	<config name="minimum_wp_version" value="6.6"/>
+	<rule ref="PHPCompatibilityWP"/>
+	<rule ref="WordPress">
+		<exclude name="WordPress.Files.FileName.InvalidClassFileName"/>
+		<exclude name="Generic.Arrays.DisallowShortArraySyntax"/>
+		<exclude name="Universal.Arrays.DisallowShortArraySyntax"/>
+	</rule>
+	<rule ref="WordPress.WP.I18n">
+		<properties><property name="text_domain" type="array"><element value="msc"/></property></properties>
+	</rule>
+	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
+		<exclude name="WordPress.NamingConventions.PrefixAllGlobals.ShortPrefixPassed"/>
+		<properties><property name="prefixes" type="array"><element value="msc"/></property></properties>
+	</rule>
+</ruleset>
