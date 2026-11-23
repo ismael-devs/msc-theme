@@ -1,0 +1,21 @@
+// Interacción (menú, buscador, marquee, visor, filtros). Uso: MSC_URL=https://sitio node tools/qa/interaccion.js
+const { chromium } = require('playwright');
+(async()=>{const b=await chromium.launch();
+const p=await (await b.newContext({viewport:{width:390,height:800},hasTouch:true})).newPage();
+p.on('pageerror',e=>console.log('ERROR JS',e.message));
+await p.goto((process.env.MSC_URL||'http://127.0.0.1:8080')+'/');
+await p.click('[data-msc-menu]'); console.log('menú abierto:', await p.isVisible('#msc-menu-movil'), await p.getAttribute('[data-msc-menu]','aria-expanded'));
+await p.keyboard.press('Escape'); console.log('menú tras Esc:', await p.isVisible('#msc-menu-movil'), '| foco en botón:', await p.evaluate(()=>document.activeElement.matches('[data-msc-menu]')));
+await p.click('[data-msc-buscar]'); console.log('buscador:', await p.isVisible('#msc-buscador'), '| foco:', await p.evaluate(()=>document.activeElement.id));
+const st=()=>p.evaluate(()=>getComputedStyle(document.querySelector('.msc-marquee__pista')).animationPlayState);
+console.log('marquee:', await st(), '| copia aria-hidden:', await p.getAttribute('.msc-marquee__copia','aria-hidden'));
+await p.tap('.msc-marquee'); console.log('tras toque:', await st()); await p.tap('.msc-marquee'); console.log('tras 2º toque:', await st());
+const d=await (await b.newContext({viewport:{width:1440,height:900}})).newPage(); await d.goto((process.env.MSC_URL||'http://127.0.0.1:8080')+'/');
+await d.hover('.msc-marquee'); console.log('hover escritorio:', await d.evaluate(()=>getComputedStyle(document.querySelector('.msc-marquee__pista')).animationPlayState));
+await d.goto((process.env.MSC_URL||'http://127.0.0.1:8080')+'/'); await d.keyboard.press('Tab'); console.log('1er Tab:', await d.evaluate(()=>document.activeElement.textContent.trim()));
+await d.goto((process.env.MSC_URL||'http://127.0.0.1:8080')+'/colecciones/libros/pieza-ejemplo-01/'); await d.click('.msc-visor__miniaturas li:nth-child(2) a');
+console.log('visor:', (await d.getAttribute('.msc-visor__img','src')).split('/').pop(), await d.getAttribute('.msc-visor__miniaturas li:nth-child(2) a','aria-current'));
+const m=await (await b.newContext({viewport:{width:390,height:800}})).newPage(); await m.goto((process.env.MSC_URL||'http://127.0.0.1:8080')+'/colecciones/libros/');
+console.log('filtros móvil abiertos:', await m.evaluate(()=>document.querySelector('[data-msc-filtros]').open));
+await m.goto((process.env.MSC_URL||'http://127.0.0.1:8080')+'/colecciones/libros/?msc_q=03'); console.log('con filtro:', await m.evaluate(()=>document.querySelector('[data-msc-filtros]').open), '| resultados:', await m.locator('.msc-resultados .msc-tarjeta').count());
+await b.close();})();
